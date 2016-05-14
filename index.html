@@ -1,60 +1,154 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Truong Pham</title>
-		<link href="css/stylesheet.css" type="text/css" rel="stylesheet"></link>
+    <head>
+        <meta charset="utf-8">
+        <title>Truong Pham </title>
+        <link href="css/stylesheet.css" type="text/css" rel="stylesheet"></link>
 		<link rel="shortcut icon" href="media/favicon.png">
 		<link rel="stylesheet" href="css/animate.css">
-	</head>
-	<body>
-		<div class="header">
-			
-			<div class="container">
-				
-				<div class="logo">
-					<h1><a href="index.html">Pham</h1>
-				</div>
-				
-				<div class="nav">
-					<ul>
-						<li class="headerList"><a href="index.html">Home</a></li>
-						<li class="headerList"><a href="projects.html">Projects</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="content fadeInDown animated">
-			
-			
-			<div class="profile-pic">
-				<img src="media/profile.png" alt="">
-			</div>
-			
-			<div class="name">
-				<h1>Truong Pham</h1>
-			</div>
-			
-			<div class="title">
-				<h2>Computer Science</h2>
-			</div>
-			
-			<div class="description">
-				<p>I am a create mind who loves to learn. Currently a college student studying computer science at University of North Carolina, Charlotte.
-					From an early age I've always been deeply interest in computing. I always wanted to know how computers worked and their impact on society.
-					I created this website and a few open source projects while learning.
-					These projects will enable me to draw on all my previous knowledge and experience to enhance academic quality.
-				</p>
-			</div>
-			
-			
-			<div class="social">
-				<li><a href="mailto:truongpham320@gmail.com"><img src="media/gmail.png" alt=""></a></li>
-				<li><a href="http://github.com/phamyz"><img src="media/github.png" alt=""></a></li>
-				<li><a href="https://plus.google.com/114353701900231164051/"><img src="media/googleplus.png" alt=""></a></li>
-			</div>
-		</div>
-		
-		
-		<img id="background" src="media/background1.jpg" alt="">
-	</body>
+        
+        <meta name="description" content="Truong Pham">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    </head>
+    
+    <body>
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-custom" id="my-navbar">
+            <div class="container">
+                
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a href="" class="navbar-brand">Pham</a>
+                </div> <!-- navbar-header -->
+                
+                <div class="collapse navbar-collapse text-center" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Home</a>
+                        <li><a href="#project">Project</a>
+                        <li><a href="#photography">Photography</a>
+                        <li><a href="#resume">Resume</a>
+                    </ul>
+                </div>
+            </div> <!-- End container -->
+        </nav> <!-- End navbar -->
+        
+        
+        <div class="jumbotron jumbotron-aboutme">
+            <div class="container text-center" id="home">
+                <h2>About me</h2>
+                
+                <div class="name">
+				    <h1>Truong Pham</h1>
+                </div>
+                
+                <div class="title">
+                    <h2>Computer Science</h2>
+                </div>
+                
+                <div class="description">
+                    <p>I am a create mind who loves to learn. Currently a college student studying Computer Science at University of North Carolina at Charlotte.
+                        From an early age I've always been deeply interest in computing. I always wanted to know how computers worked and their impact on society.
+                        I created this website and few personal projects while learning to help me become a better programmer.
+                    </p>
+                </div>
+            </div> <!-- End container -->
+        </div> <!-- End jumboltron -->
+        
+        <div class="container">
+		    <section>
+                <div class="projects" id="project">
+                    <a href="https://github.com/Phamyz/AndroidCalculator">
+                        <h4>Android Calculator</h4>
+                        <img src="media/projects/calculator.png" alt="">
+                    </a>
+                    
+                    <ul>
+                        <li>An android application performs basic of calculation.
+                            This application uses stack to convert infix to postfix, and postfix to answer.
+                        </li>
+                        <li>Used: Java, Android Development, Stack datastructure.</li>
+                    </ul>
+                </div>
+                    
+                    <hr>
+                </div>
+        
+            </section>
+        </div> <!-- end porject -->
+        
+            
+        <!-- Gallery -->
+        <div class="container">
+            <section>
+                <div class="page-header" id="photography">
+                    <h2>Gallery.<small> Check out photos taken by me.</small></h2>
+                </div>
+
+                <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                        <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="media/photography/fallwinter.jpeg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Winter is Coming</h3>
+                                <p>Snow in Fall season at Appalachian State University</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="media/photography/winter.jpeg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Cold Winter</h3>
+                                <p>Snowing in Winter season</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="media/photography/summer.jpeg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Summer</h3>
+                                <p>The sun spread across Appalachian Statet University campus</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="media/photography/blizzard.jpeg" alt="Text of the image">
+                            <div class="carousel-caption">
+                                <h3>Blizzard</h3>
+                                <p>Crazy blizzard that covered everything with snow.</p>
+                            </div>
+                        </div>
+
+                    </div><!-- End Carousel inner -->
+                    <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div><!-- End Carousel -->
+
+            </section>
+        </div>
+        
+        
+        
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </body>
 </html>

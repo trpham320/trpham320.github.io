@@ -1,121 +1,41 @@
 body {
-	width: 100%;
-	margin: auto;
+	padding-top: 40px;
 }
 
-.container{
-	width: 960px;
-	margin: 0 auto;
+.jumbotron-aboutme{
+  background-image: url("../media/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  min-height: 1100px;
 }
 
-.header {
-	background: #303030;
-	width: 100%;
-	top: 0;
-	position: relative;
-	height: 80px;
+.jumbotron-aboutme h2{
+	font-weight: bold;
+	margin: 100px 0 40px 0;
 }
 
-.logo {
-	float: left;
-	font-family: serif;
-	font-size: 15px;
-	color: #ffffff;
-}
-
-a {
-	text-decoration: none;
-	color: #ffffff;
-}
-a:visited {color:#ffffff;}  /* visited link */
-a:hover {color: darkgray;}  /* mouse over link */
-a:active {color: darkgrey;}  /* selected link */
-
-.headerList{
-	list-style: none;
-	float: left;
-	margin-left: 15px;
-	padding-top: 15px;
-	font-size: 20px;
-}
-
-.nav {
-	float: right;
-}
-
-/*Home page content*/
-.content  {
-	position: relative;
-	top: 180px;
-	width: 650px;
-	margin: 0 auto;
-	z-index: 10;
-	text-align: center;
-}
-
-/*Home page content*/
-.content li {
-	list-style: none; /*Remove bullet points*/
-	display: inline;
-    padding: 30px;
-}
 
 /*Home page*/
 .name{
 	font-family: monospace;
 	font-size: 20px;
 	color: black;
+	font-weight: bold;
 	margin: 0;
 }
 
 /*Home page*/
 .title {
 	font-family: monospace;
-	font-size: 10px;
+	font-size: 5px;
 	color: #666666;
 	margin: 40px 0 40px 0;
 	font-style: italic;
-	
 }
 
-/*Home page*/
-#background{
-	background: #d9d9d9;
-	position: absolute;
-	top: 80px;
-	max-width: 100%;
-}
-
-/*Home page*/
-p {
-	font-family: cursive;
-	color: black;
+.description {
+	font-family:  "pressura", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: black;
 	font-size: 17px;
-	margin: 0 0 150px 0;
-	line-height: 200%;
-}
-
-/*Projects page*/
-.body {
-	width: 960px;
-	margin: 0 auto;
-	display: block;
-}
-
-/*Projects page*/
-.projects {
-	position: relative;
-}
-
-/*Projects page*/
-.projects h4 {
-	color: black;
-}
-
-/*Projects page*/
-.projects ul {
-	top: 20px;
-	left: 150px;
-	position: absolute;
-	line-height: 200%;
+	line-height: 300%;
 }
